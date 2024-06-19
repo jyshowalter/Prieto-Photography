@@ -5,7 +5,10 @@ const Carousel = () => {
     <div>
       <div className="carousel w-full">
         <div id="slide1" className="carousel-item relative w-full">
-          <img src="..\src\assets\images\Slide1.jpg" className="w-full" />
+          <img
+            src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Slide1.jpg?raw=true"
+            className="w-full"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide4" className="btn btn-circle">
               ❮
@@ -16,7 +19,10 @@ const Carousel = () => {
           </div>
         </div>
         <div id="slide2" className="carousel-item relative w-full">
-          <img src="..\src\assets\images\Slide2.jpg" className="w-full" />
+          <img
+            src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Slide2.jpg?raw=true"
+            className="w-full"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" className="btn btn-circle">
               ❮
@@ -27,7 +33,10 @@ const Carousel = () => {
           </div>
         </div>
         <div id="slide3" className="carousel-item relative w-full">
-          <img src="..\src\assets\images\Slide3.jpg" className="w-full" />
+          <img
+            src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Slide3.jpg?raw=true"
+            className="w-full"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide2" className="btn btn-circle">
               ❮
@@ -38,7 +47,10 @@ const Carousel = () => {
           </div>
         </div>
         <div id="slide4" className="carousel-item relative w-full">
-          <img src="..\src\assets\images\Slide4.jpg" className="w-full" />
+          <img
+            src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Slide4.jpg?raw=true"
+            className="w-full"
+          />
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide3" className="btn btn-circle">
               ❮
