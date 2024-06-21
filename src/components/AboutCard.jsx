@@ -11,7 +11,7 @@ const AboutCard = () => {
         />
       </div>
       <div class="max-w-60 text-center lg:text-left lg:ml-4">
-        <h2 class="text-4xl mb-10">Hi, I'm Luis!</h2>
+        <h2 class="text-4xl mt-10 mb-10">Hi, I'm Luis!</h2>
         <p class="mb-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
           omnis optio, debitis veritatis labore, corporis voluptatem accusamus
