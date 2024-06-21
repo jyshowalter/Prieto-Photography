@@ -6,19 +6,15 @@ const PortfolioTeaser = () => {
       <div className="grid flex-grow h-32 place-items-center">
         <img src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Screenshot%202024-06-20%20195810.png?raw=true" />
       </div>
-      <div className="divider lg:divider-horizontal"></div>
       <div className="grid flex-grow h-32 place-items-center">
         <img src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Screenshot%202024-06-20%20195810.png?raw=true" />
       </div>
-      <div className="divider lg:divider-horizontal"></div>
       <div className="grid flex-grow h-32 place-items-center">
         <img src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Screenshot%202024-06-20%20195810.png?raw=true" />
       </div>
-      <div className="divider lg:divider-horizontal"></div>
       <div className="grid flex-grow h-32 place-items-center">
         <img src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Screenshot%202024-06-20%20195810.png?raw=true" />
       </div>
-      <div className="divider lg:divider-horizontal"></div>
       <div className="grid flex-grow h-32 place-items-center">
         <img src="https://github.com/jyshowalter/Prieto-Photography/blob/main/src/assets/images/Screenshot%202024-06-20%20195810.png?raw=true" />
       </div>
