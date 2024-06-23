@@ -13,7 +13,7 @@ export default {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui", "@tailwindcdd/forms")],
   daisyui: {
     themes: ["autumn"],
   },
