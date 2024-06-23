@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 const Navbar = () => {
@@ -10,7 +11,9 @@ const Navbar = () => {
   return (
     <div className="navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Prieto Photography</a>
+        <Link to="/" className="btn btn-ghost text-xl">
+          Prieto Photography
+        </Link>
       </div>
       <div className="flex-none">
         <div className="block lg:hidden">
@@ -19,6 +22,7 @@ const Navbar = () => {
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"
+              to=""
               className="inline-block w-6 h-6 stroke-current"
             >
               <path
@@ -36,7 +40,7 @@ const Navbar = () => {
           } lg:block`}
         >
           <li>
-            <a>Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
             <div className="dropdown dropdown-hover">
@@ -48,34 +52,38 @@ const Navbar = () => {
                 className="dropdown-content z-[1] menu mt-56 p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <a>Wedding & Engagement</a>
+                  <Link to="/portfolio/wedding-and-engagement">
+                    Wedding & Engagement
+                  </Link>
                 </li>
                 <li>
-                  <a>Family Portraits</a>
+                  <Link to="/portfolio/family-portraits">Family Portraits</Link>
                 </li>
                 <li>
-                  <a>Senior & Graduation</a>
+                  <Link to="/portfolio/senior-and-graduation">
+                    Senior & Graduation
+                  </Link>
                 </li>
                 <li>
-                  <a>Maternity</a>
+                  <Link to="/portfolio/maternity">Maternity</Link>
                 </li>
                 <li>
-                  <a>Nature</a>
+                  <Link to="/portfolio/nature">Nature</Link>
                 </li>
               </ul>
             </div>
           </li>
           <li>
-            <a>About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>
-            <a>Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
         {isOpen && (
           <ul className="menu menu-vertical lg:hidden">
             <li>
-              <a>Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <div className="dropdown">
@@ -87,28 +95,34 @@ const Navbar = () => {
                   className="dropdown-content z-[1] menu mt-52 mr-60 p-2 shadow bg-base-100 rounded-box w-52 relative"
                 >
                   <li>
-                    <a>Wedding & Engagement</a>
+                    <Link to="/portfolio/wedding-and-engagement">
+                      Wedding & Engagement
+                    </Link>
                   </li>
                   <li>
-                    <a>Family Portraits</a>
+                    <Link to="/portfolio/family-portraits">
+                      Family Portraits
+                    </Link>
                   </li>
                   <li>
-                    <a>Senior & Graduation</a>
+                    <Link to="/portfolio/senior-and-graduation">
+                      Senior & Graduation
+                    </Link>
                   </li>
                   <li>
-                    <a>Maternity</a>
+                    <Link to="/portfolio/maternity">Maternity</Link>
                   </li>
                   <li>
-                    <a>Nature</a>
+                    <Link to="/portfolio/nature">Nature</Link>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
-              <a>About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         )}

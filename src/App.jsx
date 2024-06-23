@@ -1,20 +1,43 @@
-import Navbar from "./components/Navbar";
-import Carousel from "./components/Carousel";
-import AboutCard from "./components/AboutCard";
-import PortfolioTeaser from "./components/PortfolioTeaser";
-import Footer from "./components/Footer";
-import { EmblaCarousel } from "./components/EmblaCarousel";
+import {
+  Route,
+  createBrowserRouter,
+  createRoutesFromElements,
+  RouterProvider,
+} from "react-router-dom";
+import MainLayout from "./layouts/MainLayout";
+import Homepage from "./pages/Homepage";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Maternity from "./pages/Maternity";
+import Nature from "./pages/Nature";
+import Portrait from "./pages/Portrait";
+import Senior from "./pages/Senior";
+import Wedding from "./pages/Wedding";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<Homepage />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/portfolio/maternity" element={<Maternity />} />
+      <Route path="/portfolio/nature" element={<Nature />} />
+      <Route path="/portfolio/family-portraits" element={<Portrait />} />
+      <Route path="/portfolio/senior-and-graduation" element={<Senior />} />
+      <Route path="/portfolio/wedding-and-engagement" element={<Wedding />} />
+    </Route>
+  )
+);
 
 function App() {
-  return (
-    <>
-      <Navbar />
-      <EmblaCarousel />
-      <AboutCard />
-      <PortfolioTeaser />
-      <Footer />
-    </>
-  );
+  return <RouterProvider router={router} />;
+  // <>
+  //   <Navbar />
+  //   <EmblaCarousel />
+  //   <AboutCard />
+  //   <PortfolioTeaser />
+  //   <Footer />;
+  // </>;
 }
 
 export default App;
